@@ -36,13 +36,13 @@ console.log(answerThree)
 
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
-const STR_FIVE_lowerCase = STR_FIVE.toLowerCase();
-console.log(STR_FIVE_lowerCase);
-let answerFour = false;
-if (STR_FIVE_lowerCase.charAt(0) == STR_FIVE_lowerCase.charAt(8)) {
-  answerFour = true;
+const StrFiveLowerCase = STR_FIVE.toLowerCase()
+console.log(StrFiveLowerCase)
+let answerFour = false
+if (StrFiveLowerCase.charAt(0) === StrFiveLowerCase.charAt(8)) {
+  answerFour = true
 } else {
-  answerFour = false;
+  answerFour = false
 }
 console.log(answerFour)
 
@@ -51,10 +51,10 @@ console.log(answerFour)
 
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
-STR_SIX_lowerCase = STR_SIX.toLowerCase();
+const StrSixLowerCase = STR_SIX.toLowerCase()
 
 let answerFive = true
-if (STR_SIX_lowerCase.charAt(0) === STR_SIX_lowerCase.charAt(5)) {
+if (StrSixLowerCase.charAt(0) === StrSixLowerCase.charAt(5)) {
   answerFive = true
 } else {
   answerFive = false
