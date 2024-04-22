@@ -4,6 +4,8 @@ let didPass = true
 // 1. Create a conditional statement that changes the answer variable to the string
 // "Well done, you passed!" if didPass is true, or "Sorry, try again!" if didPass
 // is false
+let answer
+
 if (didPass === true) {
   answer = 'Well done, you passed!'
 } else {

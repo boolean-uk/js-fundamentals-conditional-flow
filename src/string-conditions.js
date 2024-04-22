@@ -1,12 +1,16 @@
 // 1. Use conditional statements to set answerOne to true if STR_ONE is 'Hello'
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
+let answerOne
+
 if (STR_ONE === 'Hello') {
   answerOne = true
 }
 
 // 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
+
+let answerTwo
 
 if (STR_TWO !== 'Hello') {
   answerTwo = true
@@ -17,6 +21,8 @@ if (STR_TWO !== 'Hello') {
 const STR_THREE = 'Hello' // eslint-disable-line no-unused-vars
 const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
 
+let answerThree
+
 if (STR_THREE.length > STR_FOUR.length) {
   answerThree = true
 }
@@ -26,8 +32,10 @@ if (STR_THREE.length > STR_FOUR.length) {
 
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
-let strFiveLow = STR_FIVE.toLowerCase()
-if (strFiveLow[0] === strFiveLow.charAt(strFiveLow.length-1)) {
+let answerFour
+
+const strFiveLow = STR_FIVE.toLowerCase()
+if (strFiveLow[0] === strFiveLow.charAt(strFiveLow.length - 1)) {
   answerFour = true
 }
 
@@ -36,8 +44,10 @@ if (strFiveLow[0] === strFiveLow.charAt(strFiveLow.length-1)) {
 
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
-let strSixLow = STR_SIX.toLowerCase()
-if (strSixLow [0] === strSixLow.charAt(strSixLow.length-1)) {
+let answerFive
+
+const strSixLow = STR_SIX.toLowerCase()
+if (strSixLow[0] === strSixLow.charAt(strSixLow.length - 1)) {
   answerFive = true
 } else {
   answerFive = false
@@ -47,7 +57,9 @@ if (strSixLow [0] === strSixLow.charAt(strSixLow.length-1)) {
 // if STR_SEVEN has an odd number of characters
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
-if (STR_SEVEN.length%2 === 1) {
+let answerSix
+
+if (STR_SEVEN.length % 2 === 1) {
   answerSix = STR_SEVEN.charAt(STR_SEVEN.length / 2 - 0.5)
 }
 
@@ -55,8 +67,12 @@ if (STR_SEVEN.length%2 === 1) {
 // STR_EIGHT if STR_EIGHT has an even number of characters
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
-if (STR_EIGHT.length%2 === 0) {
-  answerSeven = STR_EIGHT.charAt(STR_EIGHT.length/2-1) + STR_EIGHT.charAt(STR_EIGHT.length/2)
+let answerSeven
+
+if (STR_EIGHT.length % 2 === 0) {
+  answerSeven =
+    STR_EIGHT.charAt(STR_EIGHT.length / 2 - 1) +
+    STR_EIGHT.charAt(STR_EIGHT.length / 2)
 }
 
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
@@ -72,6 +88,8 @@ if (STR_EIGHT.length%2 === 0) {
 //
 // Run the test after changing the value of MONTH to check you've covered every month correctly
 const MONTH = 'January'
+
+let answerEight
 
 if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
   answerEight = 'Spring'
