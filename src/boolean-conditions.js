@@ -9,7 +9,7 @@ let answer = String
 
 if (didPass) {
   answer = 'Well done, you passed!'
-} else if (!didPass) {
+} else {
   answer = 'Sorry, try again!'
 }
 
