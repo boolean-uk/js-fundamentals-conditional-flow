@@ -8,41 +8,41 @@ const ARRAY_TWO = ['Hello', 'Conditions', NUM_ONE] // eslint-disable-line no-unu
 
 // 1. Use conditional statements to set answerOne to false if ARRAY_ONE is not empty
 // or true if it is empty
-let answerOne = true;
-if (ARRAY_ONE.length === 0 ) {
-  answerOne = true;
+let answerOne = true
+if (ARRAY_ONE.length === 0) {
+  answerOne = true
 } else {
-  answerOne = false;
+  answerOne = false
 }
-console.log(answerOne);
+console.log(answerOne)
 
 // 2. Use conditional statements to set answerTwo to false if ARRAY_TWO is not empty
 // or true if it is empty
-let answerTwo = true;
-if (ARRAY_TWO.length === 0 ) {
-  answerTwo = true;
+let answerTwo = true
+if (ARRAY_TWO.length === 0) {
+  answerTwo = true
 } else {
-  answerTwo = false;
+  answerTwo = false
 }
-console.log(answerTwo);
+console.log(answerTwo)
 
 // 3. Use conditional statements to set answerThree to true if NUM_ONE is more than NUM_TWO
-let answerThree = false;
+let answerThree = false
 if (NUM_ONE > NUM_TWO) {
-  answerThree = true;
+  answerThree = true
 } else {
-  answerThree = false;
+  answerThree = false
 }
-console.log(answerThree);
+console.log(answerThree)
 
 // 4. Use conditional statements to set answerFour to true if NUM_ONE or NUM_TWO are included in ARRAY_TWO
-let answerFour = false;
+let answerFour = false
 if (ARRAY_TWO.includes(NUM_ONE) || ARRAY_TWO.includes(NUM_TWO)) {
-  answerFour = true;
+  answerFour = true
 } else {
-  answerFour = false;
+  answerFour = false
 }
-console.log(answerFour);
+console.log(answerFour)
 
 // Don't edit the code below this line
 module.exports = {

@@ -1,46 +1,46 @@
 // 1. Use conditional statements to set answerOne to true if STR_ONE is 'Hello'
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
-let answerOne = false;
+let answerOne = false
 if (STR_ONE === 'Hello') {
-  answerOne = true;
+  answerOne = true
 } else {
-  answerOne = false;
+  answerOne = false
 }
-console.log(answerOne);
+console.log(answerOne)
 
 // 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
-let answerTwo = false;
+let answerTwo = false
 if (STR_TWO !== 'Hello') {
-  answerTwo = true;
+  answerTwo = true
 } else {
-  answerTwo = false;
+  answerTwo = false
 }
-console.log(answerTwo);
+console.log(answerTwo)
 
 // 3. Use conditional statements to set answerThree to true if STR_THREE is
 // longer than STR_FOUR
 const STR_THREE = 'Hello' // eslint-disable-line no-unused-vars
 const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
 
-let answerThree = false;
+let answerThree = false
 if (STR_THREE.length > STR_FOUR.length) {
-  answerThree = true;
+  answerThree = true
 }
-console.log(answerThree);
+console.log(answerThree)
 
 // 4. Use conditional statements to set answerFour to true
 // if STR_FIVE starts and ends with the same character, regardless of case
 
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
-let answerFour = false;
+let answerFour = false
 if (STR_FIVE.startsWith('A') && STR_FIVE.endsWith('a')) {
-  answerFour = true;
+  answerFour = true
 } else {
-  answerFour = false;
+  answerFour = false
 }
 console.log(answerFour)
 
@@ -49,32 +49,32 @@ console.log(answerFour)
 
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
-let answerFive = true;
+let answerFive = true
 if (STR_SIX.startsWith('J') && STR_SIX.endsWith('J')) {
-  answerFive = true;
+  answerFive = true
 } else {
-  answerFive = false;
+  answerFive = false
 }
-console.log(answerFive);
+console.log(answerFive)
 
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
-let answerSix = false;
+let answerSix = false
 if (STR_SEVEN.length % 2 !== 0) {
-  answerSix = STR_SEVEN.charAt(2);
+  answerSix = STR_SEVEN.charAt(2)
 }
-console.log(answerSix);
+console.log(answerSix)
 // 7. Use conditional statements to set answerSeven to the middle two characters of
 // STR_EIGHT if STR_EIGHT has an even number of characters
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
-let answerSeven = false;
-if (STR_EIGHT.length % 2 == 0) {
-  answerSeven = STR_EIGHT.charAt(1) + STR_EIGHT.charAt(2);
-} 
-console.log(answerSeven);
+let answerSeven = false
+if (STR_EIGHT.length % 2 === 0) {
+  answerSeven = STR_EIGHT.charAt(1) + STR_EIGHT.charAt(2)
+}
+console.log(answerSeven)
 
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
 //
@@ -88,19 +88,27 @@ console.log(answerSeven);
 // December to February: Winter
 //
 // Run the test after changing the value of MONTH to check you've covered every month correctly
-const MONTH = 'May';
+const MONTH = 'May'
 
-let answerEight = false;
-if (MONTH == 'March'|| MONTH == 'April' || MONTH == 'May') {
-  answerEight = 'Spring';
-} else if (MONTH == 'June' || MONTH == 'July' || MONTH == 'August') {
-  answerEight = 'Summer';
-} else if (MONTH == 'September' || MONTH == 'October' || MONTH == 'November') {
-  answerEight = 'Autumn';
-} else if (MONTH =='December' || MONTH == 'January' || MONTH == 'February') {
-  answerEight = 'Winter';
+let answerEight = false
+if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
+  answerEight = 'Spring'
+} else if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
+  answerEight = 'Summer'
+} else if (
+  MONTH === 'September' ||
+  MONTH === 'October' ||
+  MONTH === 'November'
+) {
+  answerEight = 'Autumn'
+} else if (
+  MONTH === 'December' ||
+  MONTH === 'January' ||
+  MONTH === 'February'
+) {
+  answerEight = 'Winter'
 }
-console.log(answerEight);
+console.log(answerEight)
 
 module.exports = {
   answerOne,
