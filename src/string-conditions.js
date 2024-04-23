@@ -56,10 +56,12 @@ const lastChar = STR_FIVE[STR_FIVE.length - 1].toLocaleLowerCase();
 
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
-let answerFive
+let answerFive 
   if (STR_SIX[0] === STR_SIX[STR_SIX.length - 1]) {
     answerFive = true
-  } 
+  } else {
+    answerFive = false
+  }
   console.log(answerFive);
 
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
@@ -103,13 +105,13 @@ const MONTH = 'January'
 
 let answerEight;
   if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
-    return 'Spring';
+    answerEight ='Spring';
   } else if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
-    return 'Summer';
+    answerEight = 'Summer';
   } else if (MONTH === 'September' || MONTH === 'October' || MONTH === 'November') {
-    return 'Autumn';
+    answerEight = 'Autumn';
   } else if (MONTH === 'December' || MONTH === 'January' || MONTH === 'February') {
-    return 'Winter';
+    answerEight = 'Winter';
   }
     console.log(answerEight);
 
