@@ -5,3 +5,4 @@ describe('answer', () => {
     expect(answer).toEqual('Correct!')
   })
 })
+console.log()
