@@ -3,19 +3,23 @@ const { answer } = require("./boolean-conditions");
 // 1. Use conditional statements to set answerOne to true if STR_ONE is 'Hello'
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
-let answerOne;
+let answerOne
   if (STR_ONE === 'Hello') {
-    answerOne = true;
+    answerOne = true
+  } else {
+    answerOne = false
   }
   console.log(answerOne);
 
 // 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
-let answerTwo;
+let answerTwo
   if (STR_TWO !== 'Hello') {
     answerTwo = true;
-  } 
+  } else {
+    answerTwo = false;
+  }
   console.log(answerTwo);
 
 // 3. Use conditional statements to set answerThree to true if STR_THREE is
@@ -23,9 +27,11 @@ let answerTwo;
 const STR_THREE = 'Hello' // eslint-disable-line no-unused-vars
 const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
 
-let answerThree;
+let answerThree
   if (STR_THREE.length > STR_FOUR.length) {
     answerThree = true
+  } else {
+    answerThree = false
   }
   console.log(answerThree);
 
@@ -34,11 +40,13 @@ let answerThree;
 
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
 
-let answerFour;
+let answerFour
 const firstChar = STR_FIVE[0].toLocaleLowerCase();
 const lastChar = STR_FIVE[STR_FIVE.length - 1].toLocaleLowerCase();
   if (firstChar === lastChar) {
     answerFour = true;
+  } else {
+    answerFour = false;
   }
   console.log(answerFour);
 
@@ -48,7 +56,7 @@ const lastChar = STR_FIVE[STR_FIVE.length - 1].toLocaleLowerCase();
 
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
-let answerFive;
+let answerFive
   if (STR_SIX[0] === STR_SIX[STR_SIX.length - 1]) {
     answerFive = true
   } 
@@ -58,23 +66,25 @@ let answerFive;
 // if STR_SEVEN has an odd number of characters
 const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 
-let answerSix;
-const middle = STR_SEVEN.length / 2;
-  if (STR_SEVEN.length % 2 === 0); {
-    return STR_SEVEN.substring(middle -1, middle + 1);}
-    answerSix = middle(STR_SEVEN);
-    console.log(answerSix);
+let answerSix
+  if (STR_SEVEN.length % 2 !== 0); {
+     const middleCharacter = Math.floor(STR_SEVEN.length / 2);
+     answerSix = STR_SEVEN[middleCharacter];
+  }  
+     console.log(answerSix);
     
-  console.log(answerSix);
-
-// 7. Use conditional statements to set answerSeven to the middle two characters of
-// STR_EIGHT if STR_EIGHT has an even number of characters
+// 7. Use conditional statements to set answerSeven to the middle two characters of STR_EIGHT 
+// if STR_EIGHT has an even number of characters
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
-let answerSeven;
+let answerSeven
   if (STR_EIGHT.length % 2 === 0) {
-    answerSeven = STR_EIGHT.length / 2
+    const middleIndex = STR_EIGHT.length / 2;
+    answerSeven = STR_EIGHT.substring(middleIndex - 1, middleIndex + 1);
+  } else {
+    answerSeven = undefined;
   }
+
   console.log(answerSeven);
 
 // 8. Set answerEight to the appropriate season based on what MONTH is set to

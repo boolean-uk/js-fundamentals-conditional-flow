@@ -13,7 +13,7 @@ let answerOne;
   else {
     answerOne = (false)
   }
-console.log(answerOne)
+  console.log(answerOne)
 
 // Task 2
 const STR = null

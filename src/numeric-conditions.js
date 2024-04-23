@@ -11,7 +11,9 @@ const ARRAY_TWO = ['Hello', 'Conditions', NUM_ONE] // eslint-disable-line no-unu
 let answerOne;
 if (ARRAY_ONE.length === 0) {
   answerOne = (true);
-} else {answerOne = false}
+} else {
+  answerOne = false;
+}
 console.log(answerOne);
 
 // 2. Use conditional statements to set answerTwo to false if ARRAY_TWO is not empty
