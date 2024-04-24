@@ -21,7 +21,7 @@ const STR = null
 // Run the test after setting STR to 'Hello', then 'Goodbye', then any other value you like
 // to verify your code is correct
 let answerTwo
-if (!(STR === 'Hello' || 'Goodbye')) {
+if (STR === 'Hello' || STR === 'Goodbye') {
   answerTwo = true
 } else {
   answerTwo = false
@@ -42,13 +42,13 @@ const AGE = 0
 // 13-19  | Teenager
 // 20+    | Adult
 let answerThree
-if (0 <= 1) {
+if (AGE <= 1) {
   answerThree = 'Baby'
-} else if (1 >= 4) {
+} else if (AGE >= 4) {
   answerThree = 'Toddler'
-} else if (5 >= 12) {
+} else if (AGE >= 12) {
   answerThree = 'Child'
-} else if (13 >= 19) {
+} else if (AGE >= 19) {
   answerThree = 'Teenager'
 } else {
   answerThree = 'Adult'
