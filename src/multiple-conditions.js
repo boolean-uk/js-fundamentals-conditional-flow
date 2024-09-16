@@ -6,7 +6,7 @@ const NUM = 9 // eslint-disable-line no-unused-vars
 // 1. Use conditional statements to set the value of the answerOne variable
 // to be true if the NUM variable is more than or equal to the LOWER variable
 // AND is less than or equal to the UPPER variable
-let answerOne
+const answerOne = NUM >= LOWER && NUM <= UPPER
 
 // Task 2
 const STR = null
@@ -16,10 +16,10 @@ const STR = null
 // Set answerTwo to false if it's neither of those
 // Run the test after setting STR to 'Hello', then 'Goodbye', then any other value you like
 // to verify your code is correct
-let answerTwo
+const answerTwo = STR === 'Hello' || STR === 'Goodbye'
 
 // Task 3
-const AGE = 0
+const AGE = 13
 
 // 3. Use conditional statements to set the answerThree variable below to a
 // string value based on what the AGE variable is set to.
@@ -34,6 +34,22 @@ const AGE = 0
 // 13-19  | Teenager
 // 20+    | Adult
 let answerThree
+switch (true) {
+  case AGE < 1:
+    answerThree = 'Baby'
+    break
+  case AGE < 5:
+    answerThree = 'Toddler'
+    break
+  case AGE < 13:
+    answerThree = 'Child'
+    break
+  case AGE < 20:
+    answerThree = 'Teenager'
+    break
+  default:
+    answerThree = 'Adult'
+}
 
 // Run the test after changing the AGE value to verify you've successfully
 // accounted for each age range
