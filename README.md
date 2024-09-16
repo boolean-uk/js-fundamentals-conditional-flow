@@ -15,7 +15,7 @@
 
 - Read through the numbered comments in the following files to understand the requirements of this exercise.
   - `src/boolean-conditions.js`
-  - `src/numeric-conditions.js`
+  - `src/numeric-conditions.`
   - `src/string-conditions.js`
   - `src/multiple-conditions.js`
 
