@@ -8,6 +8,11 @@ const NUM = 9 // eslint-disable-line no-unused-vars
 // AND is less than or equal to the UPPER variable
 let answerOne
 
+if (NUM >= LOWER && NUM < UPPER) {
+  answerOne = true
+  console.log(answerOne)
+}
+
 // Task 2
 const STR = null
 
@@ -18,8 +23,16 @@ const STR = null
 // to verify your code is correct
 let answerTwo
 
+if (STR === "Hello" || STR === "Goodbye") {
+  answerTwo = true
+  console.log(answerTwo)
+} else {
+  answerTwo = false
+  console.log(answerTwo)
+}
+
 // Task 3
-const AGE = 0
+const AGE = 31
 
 // 3. Use conditional statements to set the answerThree variable below to a
 // string value based on what the AGE variable is set to.
@@ -34,6 +47,27 @@ const AGE = 0
 // 13-19  | Teenager
 // 20+    | Adult
 let answerThree
+
+if (AGE === 0) {
+  answerThree = "Baby"
+  console.log(answerThree)
+}
+if (AGE > 0 && AGE <= 4) {
+  answerThree = "Todler"
+  console.log(answerThree)
+}
+if (AGE > 5 && AGE <= 12) {
+  answerThree = "Child"
+  console.log(answerThree)
+}
+if (AGE > 13 && AGE <= 19) {
+  answerThree = "Teenager"
+  console.log(answerThree)
+}
+if (AGE > 20) {
+  answerThree = "Adult"
+  console.log(answerThree)
+}
 
 // Run the test after changing the AGE value to verify you've successfully
 // accounted for each age range
