@@ -2,13 +2,13 @@
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
 
 let answerOne
-if  (STR_ONE === 'Hello') answerOne = true
+if (STR_ONE === 'Hello') answerOne = true
 
 // 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
 const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 
 let answerTwo
-if  (STR_TWO !== 'Hello') answerTwo = true
+if (STR_TWO !== 'Hello') answerTwo = true
 
 // 3. Use conditional statements to set answerThree to true if STR_THREE is
 // longer than STR_FOUR
@@ -36,11 +36,11 @@ if (
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
 
 let answerFive
-if (
-  STR_SIX.toLowerCase().charAt(0) ===
-  STR_SIX.toLowerCase().charAt(STR_SIX.length - 1)
-)
+if (STR_SIX.toLowerCase().charAt(0) === STR_SIX.toLowerCase().slice(-1)) {
   answerFive = true
+} else {
+  answerFive = false
+}
 
 // 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
 // if STR_SEVEN has an odd number of characters
@@ -78,14 +78,15 @@ const MONTH = 'January'
 let answerEight
 if (MONTH === 'March' || MONTH === 'April' || MONTH === 'May') {
   answerEight = 'Spring'
-}
-else if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August'){
- answerEight = 'Summer'
-}
-else if (MONTH === 'September' || MONTH === 'Oktober' || MONTH === 'November') {
+} else if (MONTH === 'June' || MONTH === 'July' || MONTH === 'August') {
+  answerEight = 'Summer'
+} else if (
+  MONTH === 'September' ||
+  MONTH === 'Oktober' ||
+  MONTH === 'November'
+) {
   answerEight = 'Autumn'
-}
-else (MONTH === 'December' || MONTH === 'January' || MONTH === 'February') {
+} else {
   answerEight = 'Winter'
 }
 
