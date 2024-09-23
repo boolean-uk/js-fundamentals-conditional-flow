@@ -1,61 +1,84 @@
-// 1. Use conditional statements to set answerOne to true if STR_ONE is 'Hello'
+// 1. Sett answerOne til true hvis STR_ONE er 'Hello'
 const STR_ONE = 'Hello' // eslint-disable-line no-unused-vars
-
 let answerOne
 
-// 2. Use conditional statements to set answerTwo to true if STR_TWO is not 'Hello'
-const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
+if (STR_ONE === 'Hello') {
+  answerOne = true
+} else {
+  answerOne = false
+}
 
+// 2. Sett answerTwo til true hvis STR_TWO ikke er 'Hello'
+const STR_TWO = 'Goodbye' // eslint-disable-line no-unused-vars
 let answerTwo
 
-// 3. Use conditional statements to set answerThree to true if STR_THREE is
-// longer than STR_FOUR
+if (STR_TWO !== 'Hello') {
+  answerTwo = true
+} else {
+  answerTwo = false
+}
+
+// 3. Sett answerThree til true hvis STR_THREE er lengre enn STR_FOUR
 const STR_THREE = 'Hello' // eslint-disable-line no-unused-vars
 const STR_FOUR = 'Good' // eslint-disable-line no-unused-vars
-
 let answerThree
 
-// 4. Use conditional statements to set answerFour to true
-// if STR_FIVE starts and ends with the same character, regardless of case
+if (STR_THREE.length > STR_FOUR.length) {
+  answerThree = true
+} else {
+  answerThree = false
+}
 
+// 4. Sett answerFour til true hvis STR_FIVE begynner og slutter med samme karakter, uansett store og små bokstaver
 const STR_FIVE = 'Alexandra' // eslint-disable-line no-unused-vars
-
 let answerFour
 
-// 5. Use conditional statements to set answerFive to true
-// if STR_SIX starts and ends with the same character, regardless of case
+if (STR_FIVE[0].toLowerCase() === STR_FIVE[STR_FIVE.length - 1].toLowerCase()) {
+  answerFour = true
+} else {
+  answerFour = false
+}
 
+// 5. Sett answerFive til true hvis STR_SIX begynner og slutter med samme karakter, uansett store og små bokstaver
 const STR_SIX = 'Joanna' // eslint-disable-line no-unused-vars
-
 let answerFive
 
-// 6. Use conditional statements to set answerSix to the middle character of STR_SEVEN
-// if STR_SEVEN has an odd number of characters
-const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
+if (STR_SIX[0].toLowerCase() === STR_SIX[STR_SIX.length - 1].toLowerCase()) {
+  answerFive = true
+} else {
+  answerFive = false
+}
 
+// 6. Sett answerSix til midterste karakter av STR_SEVEN hvis STR_SEVEN har et oddetall antall karakterer
+const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 let answerSix
 
-// 7. Use conditional statements to set answerSeven to the middle two characters of
-// STR_EIGHT if STR_EIGHT has an even number of characters
-const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
+if (STR_SEVEN.length % 2 === 1) {
+  answerSix = STR_SEVEN[Math.floor(STR_SEVEN.length / 2)]
+}
 
+// 7. Sett answerSeven til de midterste to karakterene av STR_EIGHT hvis STR_EIGHT har et partall antall karakterer
+const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 let answerSeven
 
-// 8. Set answerEight to the appropriate season based on what MONTH is set to
-//
-// For example, if MONTH is 'January', answerEight should be 'Winter'
-//
-// The below table shows the season for each range of months:
-//
-// March to May: Spring
-// June to August: Summer
-// September to November: Autumn
-// December to February: Winter
-//
-// Run the test after changing the value of MONTH to check you've covered every month correctly
-const MONTH = 'January'
+if (STR_EIGHT.length % 2 === 0) {
+  const midIndex = STR_EIGHT.length / 2
+  answerSeven = STR_EIGHT[midIndex - 1] + STR_EIGHT[midIndex]
+}
 
+// 8. Sett answerEight til den riktige årstiden basert på hva MONTH er satt til
+const MONTH = 'January'
 let answerEight
+
+if (['December', 'January', 'February'].includes(MONTH)) {
+  answerEight = 'Winter'
+} else if (['March', 'April', 'May'].includes(MONTH)) {
+  answerEight = 'Spring'
+} else if (['June', 'July', 'August'].includes(MONTH)) {
+  answerEight = 'Summer'
+} else if (['September', 'October', 'November'].includes(MONTH)) {
+  answerEight = 'Autumn'
+}
 
 module.exports = {
   answerOne,
