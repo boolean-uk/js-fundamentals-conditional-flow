@@ -63,13 +63,13 @@ const answerSeven =
 const MONTH = 'January'
 
 const answerEight =
-  MONTH === 12 || MONTH === 1 || MONTH === 2
+  MONTH === 'December' || MONTH === 'January' || MONTH === 'Febuary'
     ? 'Winter'
-    : MONTH === 3 || MONTH === 4 || MONTH === 5
+    : MONTH === 'Mars' || MONTH === 'April' || MONTH === 'May'
     ? 'Spring'
-    : MONTH === 6 || MONTH === 7 || MONTH === 8
+    : MONTH === 'June' || MONTH === 'July' || MONTH === 'August'
     ? 'Summer'
-    : MONTH === 9 || MONTH === 10 || MONTH === 11
+    : MONTH === 'September' || MONTH === 'October' || MONTH === 'November'
     ? 'Autumn'
     : 'Unknown'
 

@@ -34,7 +34,7 @@ const AGE = 0
 // 13-19  | Teenager
 // 20+    | Adult
 const answerThree =
-  AGE > 0 && AGE <= 1
+  AGE === 0 && AGE <= 1
     ? 'Baby'
     : AGE > 1 && AGE <= 4
     ? 'Toddler'
