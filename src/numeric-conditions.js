@@ -9,7 +9,10 @@ const ARRAY_TWO = ['Hello', 'Conditions', NUM_ONE] // eslint-disable-line no-unu
 // 1. Use conditional statements to set answerOne to false if ARRAY_ONE is not empty
 // or true if it is empty
 let answerOne
-
+if (ARRAY_ONE !== null) {
+  answerOne = false
+}
+console.log(answerOne)
 // 2. Use conditional statements to set answerTwo to false if ARRAY_TWO is not empty
 // or true if it is empty
 let answerTwo
